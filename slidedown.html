@@ -1,0 +1,44 @@
+<html>
+    
+        <head>
+            <style>
+            #id2
+            {   
+                width:100px;
+                height:100px;
+                border:3px red solid;
+                background-color: blueviolet;
+                display:none;
+                margin-top: 5%;
+            }
+            #id1
+            {
+                background-color: red;
+                width:50px;
+                height:50px;
+                
+            }
+        </style>
+        </head>
+        <body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script> 
+    $(document).ready(function(){
+        $("#id1").click(function(){
+          $("#id2").slideDown(10000);
+        });     
+
+    });
+    </script>
+    <div>
+        <center>
+           <div id="id1">click me</div>
+            <div id="id2">
+               <h1>Ranga</h1>
+            
+            </div>
+            
+            </center>
+        </div>
+        </body>
+</html>
