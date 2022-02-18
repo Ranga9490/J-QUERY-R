@@ -1,0 +1,28 @@
+<html>
+    
+        <head>
+            <style>
+            #id3
+            {
+                display:none;
+            }
+        </style>
+        </head>
+        <body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script> 
+    $(document).ready(function(){
+        $("#id1").focus(function(){
+          alert("this is focus");
+        });     
+
+    });
+    </script>
+    <div>
+        <center>
+            <button id="id2">clickme</button>
+            <input id="id1" type="number">
+            </center>
+        </div>
+        </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    
+        <head>
+            <style>
+            .c1
+            {
+                margin-left:20px;
+                margin-top:20px;
+            }
+        </style>
+        </head>
+<body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script> 
+    $(document).ready(function(){
+        $("#id1").click(function(){
+            var data1=$("img").width();
+            var data2=$("img").height();
+            alert(data1+data2);
+            $("img").attr("width","500");
+            $("img").attr("height","500");
+    
+        });
+     
+    });
+    </script>
+    <div>
+        <center>
+         <img src="ranga1.jpeg" width="50" height="50"/>
+            <button id="id1">attr</button>
+        </center>
+          
+        </div>
+        </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    
+    <head>
+        <style>
+        #id3
+        {
+            display:none;
+        }
+    </style>
+    </head>
+    <body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+<script> 
+$(document).ready(function(){
+    $("#id1").bind("click",function(){
+      alert("this is bind");
+    });  
+    $("#id2").click(function(){
+        $("#id1").unbind("click");
+    })
+});
+</script>
+<div>
+    <center>
+        <button id="id1">bind</button>
+        <button id="id2">unbind</button>
+       
+        </center>
+    </div>
+    </body>
+</html>
